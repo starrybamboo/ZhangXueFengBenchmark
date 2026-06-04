@@ -2,17 +2,21 @@
 
 [中文](README.md) | English | [日本語](README.ja.md)
 
-ZhangXueFengBenchmark is a Chinese-language workload collection for evaluating sycophancy in large language models. The project name comes from the first seed set, which uses Zhang Xuefeng-related judgment prompts. The intended research object, however, is not a single public figure or a single factual claim. The benchmark more generally examines whether models preserve independent judgment when user prompts contain prior assumptions, social authority cues, or factually uncertain claims.
+ZhangXueFengBenchmark is a Chinese-language test set for checking whether an AI is too sycophantic. The name mentions Zhang Xuefeng because the first examples came from Zhang Xuefeng-related questions that were widely circulated in QQ groups. The project is not meant to test only Zhang Xuefeng-related prompts. It is meant to test a broader pattern: when the user strongly hints at a preferred answer, will the AI still keep its own factual judgment?
 
 In this project, “sycophancy” does not mean being polite, gentle, or empathetic. It means that a model follows the direction the user appears to prefer when faced with strong assumptions, authority cues, or leading claims, instead of maintaining factual accuracy, boundaries, and independent judgment.
 
-## Workload Abstraction
+## Statement
 
-This project treats the Zhang Xuefeng benchmark as a seed instance of a more general workload rather than as a dataset limited to one person. This class of workload typically has three properties. First, the prompt contains a factual claim that is verifiable or at least requires cautious treatment. Second, the user wording introduces a prior stance, emotional pressure, or an appeal to authority. Third, the desired model behavior is not simple agreement or refusal, but evidence-constrained reasoning, conditional expression, and pushback when necessary.
+I do not intend to defame or insult Mr. Zhang Xuefeng in any way. This name and this initial batch of examples were chosen only because Zhang Xuefeng-related cases were the most widely circulated in QQ groups and were easy for people to understand and reproduce. I apologize if this caused any misunderstanding.
 
-Under this abstraction, the workload can be extended to multiple task families. A prompt about whether Zhang Xuefeng is correct in a disputed judgment can be viewed as a public-figure claim verification task. A prompt about whether a celebrity has died can form a “celebrity death benchmark”, testing whether a model repeats a false claim when the user strongly implies it. Similar structures can be constructed around school rankings, career decisions, regional stereotypes, medical or legal advice, and public events. Although the surface domains differ, the evaluation target remains the same: factual consistency, caution, and independence under user-induced pressure.
+## What This Benchmark Tries To Test
 
-The current dataset is therefore a seed set rather than a stable leaderboard. Its main value is to provide a small group of reviewable Chinese examples with initial human labels. Future versions should expand across domains, induction patterns, and risk levels so that the project evolves from an event-specific collection into a broader Chinese-language sycophancy evaluation workload.
+The Zhang Xuefeng cases are only the starting point. The real question is whether an AI will simply agree when the user gives it a claim, a rumor, an authority figure, or an emotionally loaded judgment.
+
+This pattern can be moved to many other topics. For example, “has this celebrity already died?” can become a celebrity death benchmark, testing whether the AI follows a false hint from the user. Questions such as “is this school definitely better than that one,” “is this career definitely hopeless,” or “must this public figure be right” can also be turned into similar tests.
+
+So although the repository is named ZhangXueFengBenchmark, it is more accurately an AI sycophancy test set that starts from Zhang Xuefeng-related examples. The current data is still early-stage and should not be treated as a final ranking. It is only a small set of reviewable seed samples.
 
 ## Current Data
 
