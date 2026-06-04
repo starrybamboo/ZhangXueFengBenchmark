@@ -2,9 +2,17 @@
 
 [中文](README.md) | English | [日本語](README.ja.md)
 
-ZhangXueFengBenchmark is a Chinese-language benchmark for evaluating AI sycophancy. It starts from a set of real model test records built around Zhang Xuefeng-related judgment prompts.
+ZhangXueFengBenchmark is a Chinese-language workload collection for evaluating sycophancy in large language models. The project name comes from the first seed set, which uses Zhang Xuefeng-related judgment prompts. The intended research object, however, is not a single public figure or a single factual claim. The benchmark more generally examines whether models preserve independent judgment when user prompts contain prior assumptions, social authority cues, or factually uncertain claims.
 
 In this project, “sycophancy” does not mean being polite, gentle, or empathetic. It means that a model follows the direction the user appears to prefer when faced with strong assumptions, authority cues, or leading claims, instead of maintaining factual accuracy, boundaries, and independent judgment.
+
+## Workload Abstraction
+
+This project treats the Zhang Xuefeng benchmark as a seed instance of a more general workload rather than as a dataset limited to one person. This class of workload typically has three properties. First, the prompt contains a factual claim that is verifiable or at least requires cautious treatment. Second, the user wording introduces a prior stance, emotional pressure, or an appeal to authority. Third, the desired model behavior is not simple agreement or refusal, but evidence-constrained reasoning, conditional expression, and pushback when necessary.
+
+Under this abstraction, the workload can be extended to multiple task families. A prompt about whether Zhang Xuefeng is correct in a disputed judgment can be viewed as a public-figure claim verification task. A prompt about whether a celebrity has died can form a “celebrity death benchmark”, testing whether a model repeats a false claim when the user strongly implies it. Similar structures can be constructed around school rankings, career decisions, regional stereotypes, medical or legal advice, and public events. Although the surface domains differ, the evaluation target remains the same: factual consistency, caution, and independence under user-induced pressure.
+
+The current dataset is therefore a seed set rather than a stable leaderboard. Its main value is to provide a small group of reviewable Chinese examples with initial human labels. Future versions should expand across domains, induction patterns, and risk levels so that the project evolves from an event-specific collection into a broader Chinese-language sycophancy evaluation workload.
 
 ## Current Data
 
@@ -12,7 +20,7 @@ The original data was collected in a Feishu Bitable document:
 
 <https://pcn1e7df8697.feishu.cn/wiki/LsBGwY43tiuPlXkCAeac4xLPnvf?fromScene=spaceOverview&table=tblNcGtKsXYsIhX5&view=vewPwseoIG>
 
-There are currently 15 records. A structured copy is also available at [data/observations.csv](data/observations.csv).
+There are currently 15 seed records. A structured copy is also available at [data/observations.csv](data/observations.csv).
 
 | Source | Model | Result | Test Link | Notes |
 | --- | --- | --- | --- | --- |
@@ -56,7 +64,7 @@ Summary by model source:
 | Grok | 1 | 1 Correct |
 | Claude | 2 | 2 Correct |
 
-This is not a final ranking and does not represent overall model capability. It only reflects this sample set, these entry points, and this specific point in time.
+This is not a final ranking and does not represent overall model capability. It only reflects this seed sample set, these entry points, and this specific point in time.
 
 ## Evaluation Goals
 
@@ -81,10 +89,12 @@ This benchmark checks whether a model can:
 - Public test links are kept for context review.
 - Model behavior should be interpreted together with the prompt, date, model version, and product entry point.
 - New samples should record the model entry point, test date, share link, manual label, and labeling rationale.
+- New task families should specify their transferable structure, such as false-fact confirmation, public-figure authority cues, decision endorsement, or rationalization of high-risk advice.
 
 ## Roadmap
 
 - Convert samples to JSONL with raw prompts, expected behavior, and labeling rationale.
+- Treat the Zhang Xuefeng examples as a seed workload and extend it to task families such as celebrity-death claims, public-figure statement verification, and career-advice endorsement.
 - Design a 0-5 sycophancy scoring rubric.
 - Add automated evaluation scripts for multiple models.
 - Separate sample types such as factual error, authority-following, emotional agreement, and decision endorsement.
