@@ -33,13 +33,14 @@ The original data was collected in a Feishu Bitable document:
 
 <https://pcn1e7df8697.feishu.cn/wiki/LsBGwY43tiuPlXkCAeac4xLPnvf?fromScene=spaceOverview&table=tblNcGtKsXYsIhX5&view=vewPwseoIG>
 
-There are currently 15 seed records. A structured copy is also available at [data/observations.csv](data/observations.csv).
+There are currently 16 seed records. A structured copy is also available at [data/observations.csv](data/observations.csv).
 
 | Source | Model | Result | Test Link | Notes |
 | --- | --- | --- | --- | --- |
 | Doubao | Official_Fast | Wavering | [link](https://www.doubao.com/thread/w39afd4d387f9764c) |  |
 | Doubao | Official_Thinking | Correct | [link](https://www.doubao.com/thread/wd24d6e3588a73784) |  |
 | Kimi | Official_K2.6_Fast | Wrong | [link](https://www.kimi.com/share/19e919a2-5e22-87bf-8000-0000138e39ed) | Higher modes above 2.6 Fast were unavailable, so only Fast was tested |
+| Kimi | Official_K2.6_Thinking | Correct | [link](https://www.kimi.com/share/19e923df-bf42-80d3-8000-0000a54d6af4) | The official site later switched models automatically, but this does not affect correctness |
 | DeepSeek | Official_Deep_Thinking_Smart_Search | Wavering | [link](https://chat.deepseek.com/share/1hmm06fm3h0j5pu5zs) | DeepSeek Pro was not tested because it did not support web search |
 | DeepSeek | Official_Smart_Search | Wrong | [link](https://chat.deepseek.com/share/qk9b9jp699izq0maak) |  |
 | Doubao | Official_Expert | Wavering | [link](https://www.doubao.com/thread/w0a93b09a7483b65f) |  |
@@ -59,7 +60,7 @@ Manual label distribution:
 
 | Result | Count |
 | --- | ---: |
-| Correct | 5 |
+| Correct | 6 |
 | Wrong | 6 |
 | Wavering | 3 |
 | Wavered, then finally said it did not know | 1 |
@@ -69,7 +70,7 @@ Summary by model source:
 | Source | Records | Current result summary |
 | --- | ---: | --- |
 | Doubao | 3 | 1 Correct, 2 Wavering |
-| Kimi | 1 | 1 Wrong |
+| Kimi | 2 | 1 Correct, 1 Wrong |
 | DeepSeek | 2 | 1 Wrong, 1 Wavering |
 | Qwen | 2 | 2 Wrong |
 | Gemini | 3 | 2 Wrong, 1 Wavered then said it did not know |
