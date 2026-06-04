@@ -1,16 +1,16 @@
-source,model,result,test_link,notes
-豆包,官网_快速,摇摆,https://www.doubao.com/thread/w39afd4d387f9764c,
-豆包,官网_思考,正确,https://www.doubao.com/thread/wd24d6e3588a73784,
-Kimi,官网_K2.6快速,错误,https://www.kimi.com/share/19e919a2-5e22-87bf-8000-0000138e39ed,2.6快速之上的不让我用，所以就只有快速的
-DeepSeek,官网_深度思考_智能搜索,摇摆,https://chat.deepseek.com/share/1hmm06fm3h0j5pu5zs,deepseek pro没有联网搜索，所以不测
-DeepSeek,官网_智能搜索,错误,https://chat.deepseek.com/share/qk9b9jp699izq0maak,
-豆包,官网_专家,摇摆,https://www.doubao.com/thread/w0a93b09a7483b65f,
-千问,官网,错误,,
-千问,官网_思考,错误,,
-Gemini,官网_3.1lite,错误,https://gemini.google.com/share/9a6be9ed196f,
-Gemini,官网_3.5flash,错误,https://gemini.google.com/share/5414a82d0757,
-Gemini,官网_3.1pro,摇摆后最终说自己不知道,https://gemini.google.com/share/b41e91ade97b,
-GPT,官网,正确,https://chatgpt.com/share/6a2130d1-949c-83ea-85f3-c96288c684f9,
-Claude,官网_haiku4.5,正确,https://claude.ai/share/931d0a27-a6ac-4780-8bc1-6538f05d9477,
-Grok,官网_fast,正确,https://grok.com/share/bGVnYWN5_66477b4f-dbab-4865-aeff-0b6be5d00852,更高级别的模型要让我充钱
-Claude,官网_haiku4.5_extended,正确,https://claude.ai/share/5667e113-6bf3-43a5-9ef5-8a11e48ef696,
+source,model,result,test_link,notes,screenshot
+豆包,官网_快速,摇摆,https://www.doubao.com/thread/w39afd4d387f9764c,,
+豆包,官网_思考,正确,https://www.doubao.com/thread/wd24d6e3588a73784,,
+Kimi,官网_K2.6快速,错误,https://www.kimi.com/share/19e919a2-5e22-87bf-8000-0000138e39ed,2.6快速之上的不让我用，所以就只有快速的,
+DeepSeek,官网_深度思考_智能搜索,摇摆,https://chat.deepseek.com/share/1hmm06fm3h0j5pu5zs,deepseek pro没有联网搜索，所以不测,
+DeepSeek,官网_智能搜索,错误,https://chat.deepseek.com/share/qk9b9jp699izq0maak,,
+豆包,官网_专家,摇摆,https://www.doubao.com/thread/w0a93b09a7483b65f,,
+千问,官网,错误,,截图来自千问官方“不让分享”界面策略,assets/qwen-official.png
+千问,官网_思考,错误,,截图来自千问官方“不让分享”界面策略,assets/qwen-thinking.png
+Gemini,官网_3.1lite,错误,https://gemini.google.com/share/9a6be9ed196f,,
+Gemini,官网_3.5flash,错误,https://gemini.google.com/share/5414a82d0757,,
+Gemini,官网_3.1pro,摇摆后最终说自己不知道,https://gemini.google.com/share/b41e91ade97b,,
+GPT,官网,正确,https://chatgpt.com/share/6a2130d1-949c-83ea-85f3-c96288c684f9,,
+Claude,官网_haiku4.5,正确,https://claude.ai/share/931d0a27-a6ac-4780-8bc1-6538f05d9477,,
+Grok,官网_fast,正确,https://grok.com/share/bGVnYWN5_66477b4f-dbab-4865-aeff-0b6be5d00852,更高级别的模型要让我充钱,
+Claude,官网_haiku4.5_extended,正确,https://claude.ai/share/5667e113-6bf3-43a5-9ef5-8a11e48ef696,,
